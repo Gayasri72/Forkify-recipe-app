@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="src/sass/main.scss" />
-    <script defer src="src/js/controller.js"></script>
+    <script type="module" src="src/js/controller.js"></script>
 
     <title>forkify // Search over 1,000,000 recipes</title>
   </head>
@@ -327,6 +327,22 @@
           <span>Upload</span>
         </button>
       </form>
+    </div>
+
+    <div class="error-modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <div class="error-modal__content">
+        <div class="error-modal__icon">
+          <svg>
+            <use href="src/img/icons.svg#icon-alert-triangle"></use>
+          </svg>
+        </div>
+        <h3 class="error-modal__title">Oops! Something went wrong</h3>
+        <p class="error-modal__message">
+          An error occurred while processing your request.
+        </p>
+        <button class="btn error-modal__btn">Try Again</button>
+      </div>
     </div>
   </body>
 </html>
